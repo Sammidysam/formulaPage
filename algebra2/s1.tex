@@ -512,10 +512,10 @@
     \end{align*}
 \end{minipage}}
 
-\fbox{\begin{minipage}{207pt}
+\fbox{\begin{minipage}{197pt}
     \centering $y=\sin x$ in red; $y=\cos x$ in blue
     
-    \begin{tikzpicture}
+    \begin{tikzpicture}[trim axis left,trim axis right]
       \begin{axis}[domain=0:2*pi,restrict y to domain=-1:1,width=204pt,height=120pt,xtick={0,1.570795,3.14159,4.712385,6.28318},xticklabels={0,$\pi/2$,$\pi$,$3\pi/2$,$2\pi$}]
         \addplot[red] plot (\x, {sin(\x r)});
         \addplot[blue] plot (\x, {cos(\x r)});
