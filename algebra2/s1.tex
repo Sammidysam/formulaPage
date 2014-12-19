@@ -512,19 +512,34 @@
     \end{align*}
 \end{minipage}}
 
-\fbox{\begin{minipage}{197pt}
+\fbox{\begin{minipage}{183pt}
     \centering $y=\sin x$ in red; $y=\cos x$ in blue
     
     \begin{tikzpicture}[trim axis left,trim axis right]
-      \begin{axis}[domain=0:2*pi,restrict y to domain=-1:1,width=204pt,height=120pt,xtick={0,1.570795,3.14159,4.712385,6.28318},xticklabels={0,$\pi/2$,$\pi$,$3\pi/2$,$2\pi$}]
+      \begin{axis}[domain=0:2*pi,xmin=0,xmax=6.28318,ymin=-1.2,ymax=1.2,width=194pt,height=120pt,xtick={0,1.570795,3.14159,4.712385,6.28318},xticklabels={0,$\pi/2$,$\pi$,$3\pi/2$,$2\pi$}]
         \addplot[red] plot (\x, {sin(\x r)});
         \addplot[blue] plot (\x, {cos(\x r)});
       \end{axis}
 
     \end{tikzpicture}
 \end{minipage}}
+\fbox{\begin{minipage}{183pt}
+    \centering $y=\csc x$ in red; $y=\sec x$ in blue, asymtotes dotted
+    
+    \begin{tikzpicture}[trim axis left,trim axis right]
+      \begin{axis}[domain=0:2*pi,xmin=-0.5,xmax=6.78318,ymin=-10,ymax=10,restrict y to domain=-10:10,width=194pt,height=120pt,xtick={0,1.570795,3.14159,4.712385,6.28318},xticklabels={0,$\pi/2$,$\pi$,$3\pi/2$,$2\pi$}]
+        \addplot[smooth,red,samples=301] plot (\x, {cosec(\x r)});
+        \addplot[smooth,blue,samples=301] plot (\x, {sec(\x r)});
+        \draw[dotted] (axis cs:0,-10) -- (axis cs:0,10);
+        \draw[blue,dotted] (axis cs:1.570795,-10) -- (axis cs:1.570795,10);
+        \draw[red,dotted] (axis cs:3.14159,-10) -- (axis cs:3.14159,10);
+        \draw[blue,dotted] (axis cs:4.712385,-10) -- (axis cs:4.712385,10);
+      \end{axis}
+
+    \end{tikzpicture}
+\end{minipage}}
 \fbox{ \begin{minipage}{140pt}
-    \centering sin/cos Graph Properties
+    \centering sin/cos/csc/sec Graph Properties
 
     \raggedright If in form:
     \[
