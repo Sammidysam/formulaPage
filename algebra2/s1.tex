@@ -42,7 +42,7 @@
     \[
     A(x_1,y_2) \textrm{~and~} B(x_2, y_2)
     \]
-    %\vspace*{-20pt} 
+    %\vspace*{-20pt}
     \[
     d(A, B) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
     \]
@@ -52,7 +52,7 @@
     \[
     A(x_1,y_2) \textrm{~and~} B(x_2, y_2)
     \]
-    %\vspace*{-20pt} 
+    %\vspace*{-20pt}
     \[
     \left( \frac{x_1 + x_2 }{2} , \frac{y_1 + y_2 }{2} \right)
     \]
@@ -77,7 +77,7 @@
     \]
 \end{minipage}}
 \fbox{ \begin{minipage}{140pt}
-    \centering Positive trigonometric functions
+    \centering Positive Trigonometric Functions
 
     I--All II--sin III--tan IV--cos
 \end{minipage}}
@@ -408,7 +408,7 @@ y = mx + b
     \centering Rational Roots Theorem
     \[
     2x^3+2x^2-3x-6
-    \] 
+    \]
     \hspace{15pt}$\pm1, \pm2$ \hfill $\pm1, \pm2, \pm3, \pm6$
 
     Possible rational roots:
@@ -443,7 +443,7 @@ y = mx + b
       \log(m\cdot n) &= \log m + \log n \\
       \log\left(\frac{m}{n}\right) &= \log m - \log n \\
       \log(m^n) &= n \cdot \log m \\
-      \log_bb^x &= x =b^{\log_bx} 
+      \log_bb^x &= x =b^{\log_bx}
     \end{align*}
 \end{minipage}}
 \fbox{\begin{minipage}{67pt}
@@ -469,7 +469,7 @@ y = mx + b
 \end{minipage}}
 \fbox{\begin{minipage}{212pt}
     \centering Slant Asymptotes
-    
+
     When degree of numerator is one greater than degree of denominator
     \begin{align*}
       y&=\frac{x^2-4x-5}{x-3} &&\, \textrm{Original Equation}\\
@@ -549,7 +549,7 @@ y = mx + b
 
 \fbox{\begin{minipage}{183pt}
     \centering $y=\sin x$ in red; $y=\cos x$ in blue
-    
+
     \begin{tikzpicture}[trim axis left,trim axis right]
       \begin{axis}[domain=0:2*pi,xmin=0,xmax=6.28318,ymin=-1.2,ymax=1.2,width=194pt,height=120pt,xtick={0,1.570795,3.14159,4.712385,6.28318},xticklabels={0,$\pi/2$,$\pi$,$3\pi/2$,$2\pi$}]
         \addplot[red] plot (\x, {sin(\x r)});
@@ -560,7 +560,7 @@ y = mx + b
 \end{minipage}}
 \fbox{\begin{minipage}{183pt}
     \centering $y=\csc x$ in red; $y=\sec x$ in blue, asymtotes dotted
-    
+
     \begin{tikzpicture}[trim axis left,trim axis right]
       \begin{axis}[domain=0:2*pi,xmin=-0.5,xmax=6.78318,ymin=-10,ymax=10,restrict y to domain=-10:10,width=194pt,height=120pt,xtick={0,1.570795,3.14159,4.712385,6.28318},xticklabels={0,$\pi/2$,$\pi$,$3\pi/2$,$2\pi$}]
         \addplot[smooth,red,samples=301] plot (\x, {cosec(\x r)});
@@ -585,7 +585,7 @@ y = mx + b
 
 \fbox{\begin{minipage}{183pt}
     \centering $y=\tan x$ in red; $y=\cot x$ in blue, asymtotes dotted
-    
+
     \begin{tikzpicture}[trim axis left,trim axis right]
       \begin{axis}[domain=0:pi,xmin=-0.5,xmax=3.64159,ymin=-20,ymax=20,restrict y to domain=-20:20,width=194pt,height=120pt,xtick={0,0.7853975,1.570795,2.3561925,3.14159},xticklabels={0,$\pi/4$,$\pi/2$,$3\pi/4$,$\pi$}]
         \addplot[smooth,red,samples=301] plot (\x, {tan(\x r)});
