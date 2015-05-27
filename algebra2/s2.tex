@@ -8,6 +8,7 @@
 \usepackage{amsmath}
 \usepackage{fancyhdr}
 \usepackage{datetime}
+\usepackage{enumitem}
 
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{0pt}
@@ -606,7 +607,7 @@
 
     \end{tikzpicture}
 \end{minipage}}
-\fbox{ \begin{minipage}{110pt}
+\fbox{ \begin{minipage}{130pt}
     \centering sin/cos Graph Properties
 
     \raggedright If in form:
@@ -614,10 +615,14 @@
     y=a\sin k(x-b)
     \]
     amplitude  $|a|$, period  $2\pi/k$, phase shift $b$
+
+    $\sin^{-1},\tan^{-1}$: $R[-\pi/2,\pi/2]$,
+    $\cos^{-1}$: $R[0,\pi]$,
+    \newline $D[-1,1]$ except $\tan^{-1}$: $D[-\infty,\infty]$
 \end{minipage}}
-\fbox{ \begin{minipage}{193pt}
+\fbox{ \begin{minipage}{175pt}
     \centering Allowed row operations
-    \begin{enumerate}
+    \begin{enumerate}[itemindent=-15pt]
     \item Add a multiple of one row to another
     \item Multiply a row by a nonzero constant
     \item Interchange two rows
